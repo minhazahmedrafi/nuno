@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#header-section {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/computers.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-content {
+    height: inherit;
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+
+}
+
+/* Navigation + Header */
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding: 0.2rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    padding: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1ebba3 !important;
+}
+
+.header-content h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem #000;
+    padding-bottom: 1rem;
+}
+
+.header-content h4 {
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .8rem #000;
+    padding-bottom: 1.6rem;
+}
+
+.get-btn {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+}
+
+/* End Navigation + Header */
+
+/* Start Course Section */
+#course-section {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#course-section p {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.course-btn {
+    background-color: #1ebba3;
+    border: none;
+    padding: 12px 42px;
+}
+
+/* End Course Section */
+
+/* Features Section */
+#features-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #F1ECEC;
+}
+
+.fea-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.heading-underline {
+    border-bottom: 3px solid#18BCA4;
+    width: 80px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.single-part {
+    margin-top: 30px;
+}
+
+.single-part i {
+    color: #18BCA4;
+}
+
+/* End Features Section */
+
+/* Start Resources */
+#resources-section {
+    background: url('../images/computers-3.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -35px;
+}
+
+.res-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 10%;
+}
+
+#resources-section i {
+    color: #18BCA4;
+    margin: 20px 0px;
+}
+
+.single-res {
+    margin-top: 10%;
+}
+
+.single-res h2 {
+    font-weight: 700;
+}
+
+/* End Resources */
+
+/* Start Testimonials */
+#testimonial-section {
+    background-color: #F1ECEC;
+}
+
+.tes-heading {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2b2929;
+    margin-top: 10%;
+}
+
+/* End Testimonials */
+
+/* Start Clients */
+#testimonial-section {
+    height: 100vh;
+    width: 100%;
+}
+
+.left-img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.r-text i {
+    color: #18BCA4;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.r-text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r-text hr {
+    border-color: #18BCA4;
+    border-width: 2px;
+}
+
+.r-text span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.single-client {
+    margin-top: 20%;
+}
+
+/* End Clients */
+
+/* Start Footer */
+#footer-section {
+    background-color: #40474e;
+    color: #ffffff;
+}
+
+#footer-section img {
+    width: 200px;
+}
+
+.socials i {
+    padding: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    transition: .3s ease;
+}
+
+.socials i:hover {
+    color: #18BCA4;
+}
+
+/* End Footer */
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    #header-section {
+        height: auto;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+    }
+
+    .header-content h4 {
+        font-size: 20px;
+        padding-top: -1rem;
+
+    }
+
+    .get-btn {
+        padding: .3rem .8rem;
+        font-size: .8rem;
+        margin-bottom: 20px;
+    }
+    #course-section{
+        height: auto;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    #course-section p{
+        width: 90%;
+    }
+    .narrow h1{
+        font-size: 30px;
+    }
+    #features-section{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    #resources-section{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .single-client img{
+        margin-left: 30%;
+    }
+}
